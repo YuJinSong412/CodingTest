@@ -13,3 +13,5 @@ for coin in list:
     balance %= coin
 
 print(count)
+
+
