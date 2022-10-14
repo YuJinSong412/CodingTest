@@ -7,11 +7,17 @@
 둘째 줄에 N개의 자연수가 주어진다. (1이상 10000이하의 수로 주어짐)
 입력으로 주어지는 K는 항상 M보다 작거나 같다.
 """
+import time
+
 N, M, K = map(int,input().split())
 
 data = list(map(int, input().split()))
 
+#start_time = time.time()
 data.sort(reverse=True)
+#end_time = time.time()
+
+#print("시간측정", end_time - start_time)
 
 result2 = data[0] * K + data[1]
 
