@@ -9,10 +9,8 @@ class Calculator:
         return result
 
     def avg(self):
-        result=0
-        for i in self.nums:
-            result += i
-        return result/len(self.nums)
+        total = self.add()
+        return total / len(self.nums)
 
 cal1 = Calculator([1,2,3,4,5])
 print(cal1.sum())

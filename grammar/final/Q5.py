@@ -1,13 +1,7 @@
-def Phvo(num):
-    a = 0
-    b = 1
+def fib(n):
+    if n == 0: return 0
+    if n == 1: return 1
+    return fib(n-2) + fib(n-1)
 
-    r = 0
-    print(a,b, end= " ")
-    while r < 13:
-        r = a+b
-        a = b
-        b = r
-        print(r, end=" ")
-
-Phvo(13)
+for i in range(10):
+    print(fib(i))
